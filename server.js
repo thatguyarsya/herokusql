@@ -27,6 +27,7 @@ app.get("/", function(req, res) {
     res.send("goodbye cruel woorl");
 });
 app.use("/", userRouter)
+app.use("/user", userRouter)
 
 app.listen(PORT, () => console.log(`server running, catch it if you can http://localhost:${PORT}`))
 
